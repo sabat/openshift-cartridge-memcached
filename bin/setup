@@ -15,7 +15,8 @@ git clone https://github.com/memcached/memcached memcached-$version
 cd memcached-$version
 git checkout $version
 ./autogen.sh
-./configure --enable-sasl --enable-sasl-pwdb
+# ./configure --enable-sasl --enable-sasl-pwdb
+./configure
 make -j 2
 
 # install inside cartridge
